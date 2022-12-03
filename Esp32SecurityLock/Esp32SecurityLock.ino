@@ -1,5 +1,5 @@
 #define ESP32_RELAY_LED_BUILTIN 2
-#define BUTTON_PIN_BY_PASS = 4
+#define BUTTON_PIN_BY_PASS  4
 
 // variable for storing the pushbutton status 
 int buttonState = 0;
@@ -22,10 +22,10 @@ void loop() {
 
       if (buttonState == HIGH) {
       // turn LED and RELAY on
-      digitalWrite(BUTTON_PIN_BY_PASS, HIGH);
+      digitalWrite(ESP32_RELAY_LED_BUILTIN, HIGH);
     } else {
       // turn LED and RELAY off
-      digitalWrite(BUTTON_PIN_BY_PASS, LOW);
+      digitalWrite(ESP32_RELAY_LED_BUILTIN, LOW);
     }
 
 // Following code is obmitted on 2-December by Muhammad Umer
